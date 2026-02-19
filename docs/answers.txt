@@ -1,4 +1,96 @@
+Name: Kenneth Camacho
+FSUID: kc23bv
+
+Tutorial Completion Dates
+
+Learn Git Branching on: February 18, 2026
+
+Visualizing Git on: February 18, 2026
+
+Extra Git tutorial(s) (try.github.io) on: February 18, 2026
+
+GitHub Setup
+
+Approximate Date You Created Your GitHub Account: February 2026
+
+Forked Repo Link (You must give the instructor permission to access this repo): https://github.com/kennethcxv/assignment2
+
+Paste the console output you saved at the end of step 3.C (after git push):
+
+[master 76573c2] Save git status output to docs
+1 file changed, 8 insertions(+)
+create mode 100644 docs/status.txt
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 488 bytes | 488.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done; with one local object.
+To https://github.com/kennethcxv/assignment2.git
+34f1bab..76573c2 master -> master
+
+How many commits have been made to the repo so far (anyone, not just me)?
+
+Git Command Used to Get This Answer:
+
+git rev-list --count HEAD
+
 Answer:
+
 9
+
+What date and time was the README.md file last modified?
+
+Git Command Used To Get This Answer:
+
+git log -1 --date=local --pretty=format:"%cd" -- README.md
+
+Answer:
+
 Wed Feb 18 20:58:11 2026
 
+List two reasons we use branches in a Git repository.
+
+Branches let you test things without messing up the main line of development. 
+And they help teams coordinate work since you don’t have multiple people stepping on each other’s changes all the time.
+
+What is the difference between git log and git status?
+
+Git log shows you commit history – who did what when and why (the messages). 
+Git status tells you what’s happening in your working directory right now – what’s changed, staged, not staged.
+
+Which command would you use to see commits where “Vehicle.h” was one of the committed files?
+
+git log -- Vehicle.h
+
+Which command would you use to see commits whose commit message contains the word “file”?
+
+git log --grep="file"
+
+Answer the following questions in the context of object oriented programming
+
+(I) Define inheritance?
+
+Inheritance is creating a new class based on an existing one so it has all the existing class’s data and behavior, and can extend/change it.
+
+(II) Define polymorphism?
+
+Polymorphism lets a method or function work with different types of objects and act accordingly, usually through virtual functions.
+
+(III) Define encapsulation?
+
+Encapsulation keeps an object’s data protected and only accessible through well-defined methods; it controls how the data is used.
+
+What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+
+In Integration Manager, there’s a single point of contact (the integration manager) for incorporating changes made by contributors, and they usually work for or on one project and handle multiple projects.
+
+In Dictator and Lieutenants, there’s still one person who makes the final decisions about what goes in or doesn’t but they organize contributions by subsystem and have “lieutenants” handle contributions by subsystem.
+
+How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow”?
+
+Every contributor pushing into the same repo leads to too much noise – it gets clogged up really quickly
+And the points of conflict become impossible to track, which leads to a lot of confusion as to what should or shouldn’t go in. 
+By assigning lieutenants for each subsystem, it helps keep everything clean and organized and it means that once changes are incorporated they can focus on
+their own subsystem rather than being overwhelmed by everything coming from everyone all at once.
